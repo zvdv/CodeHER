@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="icon" type="image/x-icon" href="../static/Piggy.jpeg">
+    <link rel="icon" type="image/x-icon" href="../static/Piggy.ico">
 </head>
-
 
 <body>
     <div class="header">
@@ -22,6 +21,8 @@
     
     <h2>Good Evening, Sam!</h2>
     <!-- input and manual categorization of expenses -->
+
+    <img src="../static/barchart.jpg" alt="bar chart" width="600" height="300"/>
     
     <sl-drawer label="Expenses" class="drawer-overview">
         <div class="row">
@@ -87,11 +88,11 @@
         </div>
         <sl-button slot="footer" variant="neutral">Close</sl-button>
     </sl-drawer>
-    <sl-button>Expense Log Form</sl-button>
+    <sl-button class="pink"  onclick="open_popup('You\'re on your way to being a great planner!')">Log Expense</sl-button>
 
 
-    <sl-button onclick="open_popup('Great job!')">Open Popup 1</sl-button>
-    <sl-button onclick="open_popup('Good morning!')">Open Popup 2</sl-button>
+    <sl-button class="pink floatleft" onclick="open_popup('I know you\'ll reach your goals!')">Set savings goal</sl-button>
+    <sl-button class="pink floatleft" onclick="open_popup('Way to earn!')">Add income</sl-button>
 
     <!-- <sl-tooltip content="This is a tooltip">
         <sl-button>Hover Me</sl-button>
