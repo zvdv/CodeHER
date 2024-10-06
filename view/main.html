@@ -18,6 +18,10 @@
     <div class="header">
         <h1>Personal Finance Management</h1>
     </div>
+    
+    <h2>Good Evening, Sam!</h2>
+    <!-- input and manual categorization of expenses -->
+    
     <sl-drawer label="Expenses" class="drawer-overview">
         <div class="row">
             <div class="col-md-12">
@@ -80,17 +84,19 @@
                 </form>
             </div>
         </div>
-        <sl-button slot="footer" variant="primary">Close</sl-button>
+        <sl-button slot="footer" variant="neutral">Close</sl-button>
     </sl-drawer>
-
     <sl-button>Expense Log Form</sl-button>
+
+
     <sl-button onclick="open_popup('Great job!')">Open Popup 1</sl-button>
     <sl-button onclick="open_popup('Good morning!')">Open Popup 2</sl-button>
 
-    <sl-tooltip content="This is a tooltip">
+    <!-- <sl-tooltip content="This is a tooltip">
         <sl-button>Hover Me</sl-button>
-    </sl-tooltip>
+    </sl-tooltip> -->
 
+    <!-- motivational features -->
     <div class="footer">
         <div class="popup-arrow">
             <sl-popup placement="right-start" arrow arrow-placement="anchor" distance="8" shift>

@@ -3,8 +3,19 @@
     left: 0;
     top: 0;
     width: 100%;
-    background-color: deeppink;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    line-height: 2em;
+    font-size: 30px;
+    padding: 20px 20px;
+    background-color: rgba(251, 79, 136, 0.585);
     color: #ffffff;
+}
+
+h2 {
+    font-family: Nunito;
+    margin: 20px 20px;
+    color: rgba(255, 44, 114, 0.957);
 }
 
 *, *:before, *:after {
@@ -50,26 +61,26 @@
     background-color: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   
   button {
     padding: 19px 39px 18px 39px;
     color: #FFF;
-    background-color: deeppink;
+    background-color: rgba(251, 79, 136, 0.585);
     font-size: 18px;
     text-align: center;
     font-style: normal;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid deeppink;
+    border: 1px solid rgba(251, 79, 136, 0.585);
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
   fieldset {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     border: none;
 }
   
@@ -98,7 +109,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: deeppink;
+    background-color: rgba(251, 79, 136, 0.585);
 }
 
 /* Popup styles */
