@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/light.css" />
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
     <meta name="viewport" content="'width=device-width, initial-scale=1.0">
     <title>Expense Log</title>
     <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
@@ -16,17 +17,18 @@
     <h1> Our Website </h1>
     <sl-drawer label="Drawer" class="drawer-overview">
         <div class="row">
-        <div class="col-md-12">
-            <form action="index.html" method="post">
-                <h1>Add Expense Log</h1>
-            
-                <fieldset>
-                    <label for="amount">Amount:</label>
-                    <input type="expense_amount" value="" data-type="currency" id="expense_amount" name="expense_amount">
-                </fieldset>
-                
-                <fieldset>
-                    <label for="category">Category:</label>
+            <div class="col-md-12">
+                <form action="index.html" method="post">
+                    <h1>Add Expense Log</h1>
+
+                    <fieldset>
+                        <label for="amount">Amount:</label>
+                        <input type="expense_amount" value="" data-type="currency" id="expense_amount"
+                            name="expense_amount">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="category">Category:</label>
                         <select id="expense_type" name="expense_type">
                             <optgroup label="Food">
                                 <option value="groceries">Groceries</option>
@@ -57,71 +59,47 @@
                                 <option value="for_others">For Others</option>
                                 <option value="miscellaneous">Miscellaneous</option>
                             </optgroup>
-                    </select>
-                </fieldset>
+                        </select>
+                    </fieldset>
 
-                <fieldset>
-                    <label for="notes">Notes:</label>
-                    <textarea id="expense_notes" name="expense_notes"></textarea>
-                </fieldset>
-           
-                <button type="submit">Log</button>
-            
-            </form>
+                    <fieldset>
+                        <label for="notes">Notes:</label>
+                        <textarea id="expense_notes" name="expense_notes"></textarea>
+                    </fieldset>
+
+                    <button type="submit">Log</button>
+
+                </form>
+            </div>
         </div>
-    </div>
         <sl-button slot="footer" variant="primary">Close</sl-button>
     </sl-drawer>
 
     <sl-button>Open Drawer</sl-button>
 
-    <!-- <script>
-        const drawer = document.querySelector('.drawer-overview');
-        const openButton = drawer.nextElementSibling;
-        const closeButton = drawer.querySelector('sl-button[variant="primary"]');
-
-        openButton.addEventListener('click', () => drawer.show());
-        closeButton.addEventListener('click', () => drawer.hide());
-    </script> -->
-
     <sl-tooltip content="This is a tooltip">
         <sl-button>Hover Me</sl-button>
     </sl-tooltip>
 
-    <div class="footer">Bottom of page</div>
+    <div class="footer">
+        <div class="popup-arrow">
+            <sl-popup placement="right-start" arrow arrow-placement="anchor" distance="8" shift active>
+                <span slot="anchor">
+                    <img class="character" src="../static/Piggy.jpeg" alt="Piggy logo" width="100" height="100" />
+                </span>
+                <div class="box">
+                    <sl-card class="card-basic">
+                        This is just a basic card. No image, no header, and no footer. Just your content.
+                        <sl-icon-button name="x" label="x" onclick="popup.active = false"></sl-icon-button>
+                    </sl-card>
+                </div>
+            </sl-popup>
+        </div>
 
-    <div class="popup-arrow">
-        <sl-popup placement="top" arrow arrow-placement="anchor" distance="80" shift active>
-          <span slot="anchor">
-            <img class="character" src="../static/Piggy.jpeg" alt="Piggy logo" width="100" height="100" />
-          </span>
-          <div class="box">
-            <sl-card class="card-basic">
-                This is just a basic card. No image, no header, and no footer. Just your content.
-                <sl-icon-button name="x" label="x" onclick="popup.active = false"></sl-icon-button>
-              </sl-card>
-          </div>
-        </sl-popup>
-      
-        <!-- <div class="popup-arrow-options">
-          <sl-switch name="arrow" checked>Arrow</sl-switch>
-        </div> -->
-      
-        <!-- <script>
-          const container = document.querySelector('.popup-arrow');
-          const popup = container.querySelector('sl-popup');
-          const placement = container.querySelector('[name="placement"]');
-          const arrowPlacement = container.querySelector('[name="arrow-placement"]');
-          const arrow = container.querySelector('[name="arrow"]');
-      
-        //   placement.addEventListener('sl-change', () => (popup.placement = placement.value));
-        //   arrowPlacement.addEventListener('sl-change', () => (popup.arrowPlacement = arrowPlacement.value));
-        //  arrow.addEventListener('sl-change', () => (popup.arrow = arrow.checked));
-        </script> -->
-      </div>    
-      
-      
-      <script src="../js/main.js" ></script>
+    </div>
+
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
