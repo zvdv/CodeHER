@@ -6,6 +6,7 @@ app = Flask(__name__) #new
 
 url = os.getenv("TURSO_DATABASE_URL")
 auth_token = os.getenv("TURSO_AUTH_TOKEN")
+print(auth_token)
 
 conn = libsql.connect("hello.db", sync_url=url, auth_token=auth_token)
 conn.sync()
@@ -47,7 +48,7 @@ def index():
     # date_query = request.args.get('date')
     # expenses = get_expenses(date_query) if date_query else []
 
-    return render_template("main.html", expenses=expenses)
+    return render_template("main.html", Expenses=Expenses)
 
 print(add_expense('11.32', 'School', '2024-08-26'))
 print("get 1: ")
