@@ -36,6 +36,9 @@ sl-button.pink::part(base) {
     margin-bottom: 15px;
   }
 
+h1 {
+    font-family: Nunito;
+}
 h2 {
     font-family: Nunito;
     margin: 20px 20px;
