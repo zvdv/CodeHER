@@ -15,20 +15,23 @@
 
 
 <body>
-<h1>Personal Finance Management</h1>
-<sl-drawer label="Expenses" class="drawer-overview">
-    <div class="row">
-        <div class="col-md-12">
-            <form action="main.html" method="post">
-                <h1>Add Expense Log</h1>
-            
-                <fieldset>
-                    <label for="amount">Amount:</label>
-                    <input type="expense_amount" value="" data-type="currency" id="expense_amount" name="expense_amount">
-                </fieldset>
-                
-                <fieldset>
-                    <label for="category">Category:</label>
+    <div class="header">
+        <h1>Personal Finance Management</h1>
+    </div>
+    <sl-drawer label="Expenses" class="drawer-overview">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="main.html" method="post">
+                    <h1>Add Expense Log</h1>
+
+                    <fieldset>
+                        <label for="amount">Amount:</label>
+                        <input type="expense_amount" value="" data-type="currency" id="expense_amount"
+                            name="expense_amount">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="category">Category:</label>
                         <select id="expense_type" name="expense_type">
                             <optgroup label="Food">
                                 <option value="groceries">Groceries</option>
