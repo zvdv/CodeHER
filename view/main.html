@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/light.css" />
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
     <meta name="viewport" content="'width=device-width, initial-scale=1.0">
-    <title>Expense Log</title>
     <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
+
 <body>
-    <h1> Our Website </h1>
-    <sl-drawer label="Drawer" class="drawer-overview">
-        <div class="row">
-            <div class="col-md-12">
-                <form action="index.html" method="post">
-                    <h1>Add Expense Log</h1>
-
-                    <fieldset>
-                        <label for="amount">Amount:</label>
-                        <input type="expense_amount" value="" data-type="currency" id="expense_amount"
-                            name="expense_amount">
-                    </fieldset>
-
-                    <fieldset>
-                        <label for="category">Category:</label>
+<h1>Personal Finance Management</h1>
+<sl-drawer label="Expenses" class="drawer-overview">
+    <div class="row">
+        <div class="col-md-12">
+            <form action="main.html" method="post">
+                <h1>Add Expense Log</h1>
+            
+                <fieldset>
+                    <label for="amount">Amount:</label>
+                    <input type="expense_amount" value="" data-type="currency" id="expense_amount" name="expense_amount">
+                </fieldset>
+                
+                <fieldset>
+                    <label for="category">Category:</label>
                         <select id="expense_type" name="expense_type">
                             <optgroup label="Food">
                                 <option value="groceries">Groceries</option>
@@ -75,7 +75,7 @@
         <sl-button slot="footer" variant="primary">Close</sl-button>
     </sl-drawer>
 
-    <sl-button>Open Drawer</sl-button>
+    <sl-button>Expense Log Form</sl-button>
 
     <sl-tooltip content="This is a tooltip">
         <sl-button>Hover Me</sl-button>
