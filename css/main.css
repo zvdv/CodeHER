@@ -1,3 +1,11 @@
+.header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: deeppink;
+}
+
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

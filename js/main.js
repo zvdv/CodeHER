@@ -13,3 +13,8 @@ const popup = container.querySelector('sl-popup');
 const placement = container.querySelector('[name="placement"]');
 const arrowPlacement = container.querySelector('[name="arrow-placement"]');
 const arrow = container.querySelector('[name="arrow"]');
+
+function open_popup(comment){
+    popup.active = true;
+    document.getElementById('popup-text').innerHTML = comment + "<sl-icon-button name='x' label='x' onclick='popup.active = false'></sl-icon-button>";
+}
