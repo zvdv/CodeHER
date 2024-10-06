@@ -4,14 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/light.css" />
-    <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+    <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+    <title>Expense Log</title>
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <h1> Our Website </h1>
     <sl-drawer label="Drawer" class="drawer-overview">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <div class="row">
+        <div class="col-md-12">
+            <form action="index.html" method="post">
+                <h1>Add Expense Log</h1>
+            
+                <fieldset>
+                    <label for="amount">Amount:</label>
+                    <input type="expense_amount" value="" data-type="currency" id="expense_amount" name="expense_amount">
+                </fieldset>
+                
+                <fieldset>
+                    <label for="category">Category:</label>
+                        <select id="expense_type" name="expense_type">
+                            <optgroup label="Food">
+                                <option value="groceries">Groceries</option>
+                                <option value="eating_out">Eating Out</option>
+                                <option value="sweet_treat">Sweet Treat</option>
+                            </optgroup>
+                            <optgroup label="Entertainment">
+                                <option value="streaming_platform">Streaming Platform</option>
+                                <option value="activity">Activity</option>
+                            </optgroup>
+                            <optgroup label="Accomodations">
+                                <option value="rent">Rent</option>
+                                <option value="utilities">Utilities</option>
+                                <option value="housing_improvements">House Improvements</option>
+                            </optgroup>
+                            <optgroup label="Transportation">
+                                <option value="insurance">Insurance</option>
+                                <option value="fare">Fare</option>
+                                <option value="gas">Gas</option>
+                            </optgroup>
+                            <optgroup label="Healthcare">
+                                <option value="appointment">Appointment</option>
+                                <option value="medicine">Medicine</option>
+                                <option value="equipment">Equipment</option>
+                            </optgroup>
+                            <optgroup label="Personal">
+                                <option value="self_care">Self-Care</option>
+                                <option value="for_others">For Others</option>
+                                <option value="miscellaneous">Miscellaneous</option>
+                            </optgroup>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <label for="notes">Notes:</label>
+                    <textarea id="expense_notes" name="expense_notes"></textarea>
+                </fieldset>
+           
+                <button type="submit">Log</button>
+            
+            </form>
+        </div>
+    </div>
         <sl-button slot="footer" variant="primary">Close</sl-button>
     </sl-drawer>
 
