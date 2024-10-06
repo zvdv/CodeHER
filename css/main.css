@@ -32,10 +32,10 @@
     text-align: center;
   }
   
-  input[type="expense_amount"],
+  input[type="number"],
   input[type="category"],
   input[type="date"],
-  input[type="notes"],
+  /* input[type="notes"], */
   
   textarea,
   select {
