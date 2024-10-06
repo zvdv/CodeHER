@@ -25,7 +25,7 @@
     <sl-drawer label="Expenses" class="drawer-overview">
         <div class="row">
             <div class="col-md-12">
-                <form action="main.html" method="post">
+                <form action="/" method="POST">
                     <h1>Add Expense Log</h1>
 
                     <fieldset>
@@ -36,7 +36,7 @@
 
                     <fieldset>
                         <label for="category">Category:</label>
-                        <select id="expense_type" name="expense_type">
+                        <select id="category" name="category">
                             <optgroup label="Food">
                                 <option value="groceries">Groceries</option>
                                 <option value="eating_out">Eating Out</option>
@@ -79,7 +79,7 @@
                         <input type="date" id="date" name="date" value="2024-10-06"></input>
                     </fieldset>
 
-                    <button type="submit">Log</button>
+                    <button type="submit" value="Submit">Log</button>
 
                 </form>
             </div>
@@ -87,6 +87,13 @@
         <sl-button slot="footer" variant="neutral">Close</sl-button>
     </sl-drawer>
     <sl-button>Expense Log Form</sl-button>
+
+    <p>Results of Expenses</p>
+    <ul>
+        {% for expense in expenses %}
+            <li>{{ expense[0] }} - {{ expense[1] }} - {{ expense[2] }}</li>
+        {% endfor %}
+    </ul>
 
 
     <sl-button onclick="open_popup('Great job!')">Open Popup 1</sl-button>
