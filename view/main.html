@@ -9,7 +9,7 @@
     <title>Expense Log</title>
     <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -75,20 +75,20 @@
 
     <sl-button>Open Drawer</sl-button>
 
-    <script>
+    <!-- <script>
         const drawer = document.querySelector('.drawer-overview');
         const openButton = drawer.nextElementSibling;
         const closeButton = drawer.querySelector('sl-button[variant="primary"]');
 
         openButton.addEventListener('click', () => drawer.show());
         closeButton.addEventListener('click', () => drawer.hide());
-    </script>
+    </script> -->
 
     <sl-tooltip content="This is a tooltip">
         <sl-button>Hover Me</sl-button>
     </sl-tooltip>
 
-    <div class="footoer">Bottom of page</div>
+    <div class="footer">Bottom of page</div>
 
     <div class="popup-arrow">
         <sl-popup placement="top" arrow arrow-placement="anchor" distance="80" shift active>
@@ -107,7 +107,7 @@
           <sl-switch name="arrow" checked>Arrow</sl-switch>
         </div> -->
       
-        <script>
+        <!-- <script>
           const container = document.querySelector('.popup-arrow');
           const popup = container.querySelector('sl-popup');
           const placement = container.querySelector('[name="placement"]');
@@ -117,9 +117,11 @@
         //   placement.addEventListener('sl-change', () => (popup.placement = placement.value));
         //   arrowPlacement.addEventListener('sl-change', () => (popup.arrowPlacement = arrowPlacement.value));
         //  arrow.addEventListener('sl-change', () => (popup.arrow = arrow.checked));
-        </script>
-      </div>      
-
+        </script> -->
+      </div>    
+      
+      
+      <script src="../js/main.js" ></script>
 </body>
 
 </html>
