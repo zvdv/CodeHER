@@ -32,30 +32,27 @@ def get_expenses(date):
 # print(conn.execute("select * from Expenses").fetchall())
 # conn.execute("insert into Expenses(amount, category, date) values ('"+amount+"', '"+category+"', '"+date+"')")
 
-@app.route('/', methods=['GET', 'POST'])
+# @app.route('/', methods=['GET', 'POST'])
 
-def index():
-    if request.method == "POST":
-        # Get data from the form
-        amount = request.form["amount"]
-        category = request.form["category"]
-        date = request.form["date"]
+# def index():
+#     if request.method == "POST":
+#         # Get data from the form
+#         amount = request.form["amount"]
+#         category = request.form["category"]
+#         date = request.form["date"]
         
-        # Add the expense to the database
-        add_expense(amount, category, date)
+#         # Add the expense to the database
+#         add_expense(amount, category, date)
 
-    # retrieve expenses based on date
-    # date_query = request.args.get('date')
-    # expenses = get_expenses(date_query) if date_query else []
+#     # retrieve expenses based on date
+#     # date_query = request.args.get('date')
+#     # expenses = get_expenses(date_query) if date_query else []
 
-    return render_template("main.html", Expenses=Expenses)
+#     return render_template("main.html", Expenses=Expenses)
 
 print(add_expense('11.32', 'School', '2024-08-26'))
-print("get 1: ")
 print(get_expenses('2023-07-15'))
 
 conn.sync()
-
-print("get 2: ")
 
 print(conn.execute("select * from Expenses").fetchall())
